@@ -1,0 +1,228 @@
+aboutus
+-------
+import React from 'react'
+
+function Aboutus() {
+  return (
+    <div>Aboutus</div>
+  )
+}
+
+export default Aboutus
+
+constactus
+---------
+import React from 'react'
+
+function Contactus() {
+  return (
+    <div>Contactus</div>
+  )
+}
+
+export default Contactus
+
+footer
+------
+import React from 'react'
+import {Row, Col} from 'react-bootstrap'
+import {Link} from 'react-router-dom'
+
+function Footer() {
+  return (
+    <>
+    <div className='bg-light py-2 container-fluid'>
+     <Row className='p-5'>
+    <Col sm={12} md={5}>
+      <h3>Media Player 2024</h3>
+      <p style={{textAlign:'justify'}}>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita dolorem molestiae corporis quasi? Minus consectetur mollitia obcaecati
+         repellendus cupiditate ducimus, sunt vitae dolore dicta perspiciatis quibusdam modi, iste quis officia.
+      </p>
+    </Col>
+    <Col sm={12} md={2}>
+      <h3>Links</h3>
+      <div className='d-flex flex-column'>
+           <Link to={'/'}>Landing </Link>
+           <Link to={'/home'}>Home </Link>
+           <Link to={'/history'}>History</Link>
+
+      </div>
+    </Col>
+    <Col sm={12} md={5}>
+      <h3>FeedBack</h3>
+      <textarea name='' id='' className='form-control'></textarea>
+      <button className='btn btn-info mt-4'>send</button>
+    </Col>
+      </Row> 
+
+    </div>
+    </>
+  )
+}
+
+export default Footer
+
+header
+------
+import React from 'react'
+import Container from 'react-bootstrap/Container';
+import Navbar from 'react-bootstrap/Navbar';
+
+function Header() {
+    return (
+      <>
+      <Navbar className="bg-body-tertiary">
+          <Container>
+            <Navbar.Brand href="#home">
+            <i className="fa-solid fa-play fa-bounce"  style={{color: "#9d12c4",}} ></i>
+              {' '}
+              Media Player
+            </Navbar.Brand>
+          </Container>
+        </Navbar>
+        </>
+    )
+  }
+  
+  export default Header
+  
+  intro
+  -----
+  import React from 'react'
+import {Row, Col} from 'react-bootstrap'
+import {Link} from 'react-router-dom'
+import Card from 'react-bootstrap/Card';
+
+function Intro() {
+  return (
+    <>
+    <div className='container-fluid mb-5 d-flex align-items-center' style={{height:'80vh'}}>
+      <Row>
+        <Col className='p-5' sm={12} md={6}> 
+        <h2>
+        <i className="fa-solid fa-play "  style={{color: "#9d12c4",}} ></i>
+          Media Player 2024
+        </h2>
+        <p style={{textAlign:'justify'}}>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit minus, ab ut nesciunt repellendus ipsum? Ducimus, 
+          placeat tenetur blanditiis commodi debitis magni distinctio earum aliquid expedita corrupti dolorum molestias quibusdam!
+        </p>
+        <div className='d-grid'>
+          <Link to={'/home'} className='btn btn-success'> Let's Go</Link>
+
+        </div>
+        </Col>
+        <Col className='py-4' sm={12} md={6}>
+         <img src="https://cdn-site-assets.veed.io/cdn-cgi/image/width=1536,quality=75,format=auto/GIF_Player_4f6bdbcfae/GIF_Player_4f6bdbcfae.png" className='img-fluid rounded' alt="" />
+        </Col>
+      </Row>
+
+    </div>
+
+    <div className='container-fluid mt-5'>
+   <h3 className='my-3 text-center'>Features</h3>
+   <div className='p-4 d-flex justify-content-around'>
+  
+   <Card style={{ width: '18rem' }}>
+      <Card.Img variant="top" src="https://media.lordicon.com/icons/wired/gradient/2547-logo-youtube.gif" />
+      <Card.Body>
+        <Card.Title>Upload Youtube Videos</Card.Title>
+        <Card.Text>
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </Card.Text>
+
+      </Card.Body>
+    </Card>
+    <Card style={{ width: '18rem' }}>
+      <Card.Img variant="top" src="https://cdn.pixabay.com/animation/2023/06/13/15/13/15-13-09-933_512.gif" />
+      <Card.Body>
+        <Card.Title>Add Categories</Card.Title>
+        <Card.Text>
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </Card.Text>
+
+      </Card.Body>
+    </Card>
+    <Card style={{ width: '18rem' }}>
+      <Card.Img variant="top" src="https://media.lordicon.com/icons/wired/gradient/2547-logo-youtube.gif" />
+      <Card.Body>
+        <Card.Title>Watch History</Card.Title>
+        <Card.Text>
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </Card.Text>
+
+      </Card.Body>
+    </Card>
+   </div>
+    </div>
+    <div className='p-5'>
+<Row>
+  <Col sm={12} md={7}>
+    <h4>Simple And Faster</h4>
+    <p style={{textAlign:'justify'}}>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia cumque debitis ipsum veritatis impedit! Quia nulla tenetur, 
+      inventore maiores consequuntur minus totam quos impedit doloribus at saepe. Debitis, consectetur iure?
+    </p>
+  </Col>
+  <Col sm={12} md={5}>
+  <iframe width="400" height="315" src="https://www.youtube.com/embed/SqcY0GlETPk?si=fhQbfaH_ej-aCF1c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </Col>
+</Row>
+    </div>
+
+    </>
+  )
+}
+
+export default Intro
+
+work
+-----
+import React from 'react'
+
+function Works() {
+  return (
+    <div>Works</div>
+  )
+}
+
+export default Works
+
+
+app.jsx
+------
+import { useState } from 'react'
+// import './bootstrap.min.css'
+import './App.css'
+import Aboutus from './Components/Aboutus'
+import Contactus from './Components/Contactus'
+import Works from './Components/Works'
+import Intro from './Components/Intro'
+import Header from './Components/Header'
+import Footer from './Components/Footer'
+import {Routes,Route} from 'react-router-dom'
+
+function App() {
+  
+
+  return (
+    <>
+
+      
+      <Header/>
+      <Routes>
+      <Route path='/' element={<Intro/>}/>
+      <Route path='/Works' element={<Works/>}/>
+      <Route path='/Aboutus' element={<Aboutus/>}/>
+      <Route path='/Contactus' element={<Contactus/>}/>
+      </Routes>
+      <Footer/>
+    </>
+  )
+}
+
+export default App

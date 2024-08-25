@@ -1,0 +1,51 @@
+/* src/App.css */
+/* body {
+  font-family: 'Arial, sans-serif';
+}
+
+.navbar {
+  margin-bottom: 20px;
+}
+
+.jumbotron {
+  background: #f8f9fa;
+  padding: 50px 0;
+}
+
+.card-deck .card {
+  margin-bottom: 30px;
+}
+
+footer {
+  background-color: #343a40;
+  color: white;
+  padding: 15px 0;
+}
+ */
+ 
+ @keyframes slomoShake {
+  0% { transform: translate(0, 0); }
+  10% { transform: translate(-5px, 0); }
+  20% { transform: translate(5px, 0); }
+  30% { transform: translate(-5px, 0); }
+  40% { transform: translate(5px, 0); }
+  50% { transform: translate(-5px, 0); }
+  60% { transform: translate(5px, 0); }
+  70% { transform: translate(-5px, 0); }
+  80% { transform: translate(5px, 0); }
+  90% { transform: translate(-5px, 0); }
+  100% { transform: translate(0, 0); }
+}
+@keyframes slideIn {
+  0% { 
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% { 
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+

@@ -1,0 +1,17 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
+
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  
+  font-weight: 00;
+  font-style: normal;
+  font-family: "Bodoni Moda SC", serif;
+  /* font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal; */
+
+}
+
